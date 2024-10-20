@@ -14,6 +14,10 @@
 		5D17E03B2CB6C9AA008AAAEB /* Hackor_NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17E03A2CB6C9AA008AAAEB /* Hackor_NewsTests.swift */; };
 		5D17E0452CB6C9AA008AAAEB /* Hackor_NewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17E0442CB6C9AA008AAAEB /* Hackor_NewsUITests.swift */; };
 		5D17E0472CB6C9AA008AAAEB /* Hackor_NewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17E0462CB6C9AA008AAAEB /* Hackor_NewsUITestsLaunchTests.swift */; };
+		5D17E0552CB6CF93008AAAEB /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17E0542CB6CF93008AAAEB /* PostData.swift */; };
+		5D293FF82CC4DF84003B21DD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D293FF72CC4DF84003B21DD /* NetworkManager.swift */; };
+		5D293FFB2CC4E588003B21DD /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D293FFA2CC4E588003B21DD /* DetailView.swift */; };
+		5D293FFD2CC4E8FD003B21DD /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D293FFC2CC4E8FD003B21DD /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		5D17E0402CB6C9AA008AAAEB /* Hackor NewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hackor NewsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D17E0442CB6C9AA008AAAEB /* Hackor_NewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackor_NewsUITests.swift; sourceTree = "<group>"; };
 		5D17E0462CB6C9AA008AAAEB /* Hackor_NewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hackor_NewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5D17E0542CB6CF93008AAAEB /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		5D293FF72CC4DF84003B21DD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5D293FFA2CC4E588003B21DD /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		5D293FFC2CC4E8FD003B21DD /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,9 @@
 		5D17E0282CB6C9A8008AAAEB /* Hackor News */ = {
 			isa = PBXGroup;
 			children = (
+				5D17E0532CB6CF6E008AAAEB /* Models */,
 				5D17E0292CB6C9A8008AAAEB /* Hackor_NewsApp.swift */,
-				5D17E02B2CB6C9A8008AAAEB /* ContentView.swift */,
+				5D293FF92CC4E579003B21DD /* Views */,
 				5D17E02D2CB6C9AA008AAAEB /* Assets.xcassets */,
 				5D17E02F2CB6C9AA008AAAEB /* Preview Content */,
 			);
@@ -125,6 +134,25 @@
 				5D17E0462CB6C9AA008AAAEB /* Hackor_NewsUITestsLaunchTests.swift */,
 			);
 			path = "Hackor NewsUITests";
+			sourceTree = "<group>";
+		};
+		5D17E0532CB6CF6E008AAAEB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D17E0542CB6CF93008AAAEB /* PostData.swift */,
+				5D293FF72CC4DF84003B21DD /* NetworkManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5D293FF92CC4E579003B21DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D17E02B2CB6C9A8008AAAEB /* ContentView.swift */,
+				5D293FFA2CC4E588003B21DD /* DetailView.swift */,
+				5D293FFC2CC4E8FD003B21DD /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D293FF82CC4DF84003B21DD /* NetworkManager.swift in Sources */,
 				5D17E02C2CB6C9A8008AAAEB /* ContentView.swift in Sources */,
+				5D17E0552CB6CF93008AAAEB /* PostData.swift in Sources */,
+				5D293FFD2CC4E8FD003B21DD /* WebView.swift in Sources */,
+				5D293FFB2CC4E588003B21DD /* DetailView.swift in Sources */,
 				5D17E02A2CB6C9A8008AAAEB /* Hackor_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

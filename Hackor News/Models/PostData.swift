@@ -1,8 +1,25 @@
+// This file was generated from JSON Schema using quicktype, do not modify it directly.
+// To parse the JSON, add this file to your project and do:
 //
-//  PostData.swift
-//  Hackor News
-//
-//  Created by Aavhan Chatse on 09/10/24.
-//
+//   let launchDetails = try? JSONDecoder().decode(LaunchDetails.self, from: jsonData)
 
 import Foundation
+
+// MARK: - PostData
+
+struct PostData: Codable {
+    let hits: [Posts]
+}
+
+// MARK: - Posts
+
+struct Posts: Codable, Identifiable {
+    let objectID: String
+    let points: Int
+    let title: String
+    let url: String?
+
+    var id: String {
+        return objectID
+    }
+}
